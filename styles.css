@@ -1,0 +1,34 @@
+:root {
+  --accent: #c0392b;
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --text: #222;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  margin:0; background:var(--bg); color:var(--text); line-height:1.5;
+}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{background:var(--card);box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:16px}
+.site-header h1{font-size:20px;margin:0}
+.site-header nav a{margin-left:12px;text-decoration:none;color:var(--accent)}
+
+.hero{background:linear-gradient(90deg, #fff 0%, #fff 100%);padding:36px;border-radius:8px;margin:18px 0}
+.hero h2{margin:0 0 8px;font-size:28px}
+.hero p{margin:0 0 16px}
+.hero-actions button{margin-left:8px;padding:10px 14px;border-radius:6px;border:0;cursor:pointer}
+.card{background:var(--card);padding:18px;border-radius:8px;margin:12px 0;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.site-footer{padding:14px;text-align:center;color:#666}
+
+form label{display:block;margin:8px 0}
+form input, form select{width:100%;padding:8px;margin-top:6px;border:1px solid #ddd;border-radius:6px}
+form button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:6px;cursor:pointer;margin-top:8px}
+
+/* Responsive */
+@media (min-width:900px){
+  .hero{display:flex;justify-content:space-between;align-items:center}
+  .hero-actions{display:flex}
+}
