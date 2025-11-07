@@ -1,0 +1,76 @@
+# smart-blood-donation222
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>منصة التبرع الذكي بالدم</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>منصة التبرع الذكي بالدم</h1>
+      <nav>
+        <a href="#about">عن المنصة</a>
+        <a href="#donors">المتبرعون</a>
+        <a href="#requests">طلبات الدم</a>
+        <a href="#join">انضم الآن</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <h2>أنقذ حياة بالتبرع</h2>
+      <p>ابحث عن متبرعين، أنشئ طلب تبرع، وكون مجتمعًا يساعد الآخرين.</p>
+      <div class="hero-actions">
+        <button id="create-request">إنشاء طلب تبرع</button>
+        <button id="find-donors">ابحث عن متبرعين</button>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h3>عن المنصة</h3>
+      <p>منصة بسيطة لربط المحتاجين للدم مع المتبرعين. تدعم تحديد الفصيلة، المدينة، وحالة الطوارئ.</p>
+    </section>
+
+    <section id="requests" class="card">
+      <h3>طلبات التبرع الأخيرة</h3>
+      <div id="requests-list">جارٍ التحميل...</div>
+    </section>
+
+    <section id="donors" class="card">
+      <h3>المتبرعون المسجلون</h3>
+      <div id="donors-list">جارٍ التحميل...</div>
+    </section>
+
+    <section id="join" class="card">
+      <h3>انضم كمتبرع</h3>
+      <form id="donor-form">
+        <label>الاسم<input name="name" required /></label>
+        <label>البريد الإلكتروني<input name="email" type="email" required /></label>
+        <label>الهاتف<input name="phone" required /></label>
+        <label>الفصيلة
+          <select name="blood_type" required>
+            <option value="A+">A+</option><option value="A-">A-</option>
+            <option value="B+">B+</option><option value="B-">B-</option>
+            <option value="O+">O+</option><option value="O-">O-</option>
+            <option value="AB+">AB+</option><option value="AB-">AB-</option>
+          </select>
+        </label>
+        <label>المدينة<input name="city" required /></label>
+        <button type="submit">تسجيل المتبرع</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© منصة التبرع الذكي — جميع الحقوق محفوظة</small>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
